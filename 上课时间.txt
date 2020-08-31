@@ -1,0 +1,21 @@
+上课时间
+8:30楼下集合背面试题
+
+
+
+
+
+项目一：后台管理系统
+
+
+
+必会：1、webpack搭建脚手架
+          2、Echarts可视化
+          3、
+
+pro git
+
+
+echarts：<div id="main" style="width:600px;height:400px;"></div>
+	var myChart = echarts.init(document.getElementById("main"));//获取id名
+	myChart.setOption(option);//设置内容
