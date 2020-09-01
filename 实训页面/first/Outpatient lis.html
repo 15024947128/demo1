@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .wholebox {
+                width: 1401px;
+                height: 100%;
+                background: white;
+            }
+
+            .header1 {
+                width: 1401px;
+                height: 100px;
+                background: white;
+            }
+
+            .img>img {
+                width: 200px;
+                height: 70px;
+                margin-left: 240px;
+                margin-top: 20px;
+            }
+
+            #title {
+                width: 700px;
+                height: 40px;
+                background: white;
+                vertical-align: middle;
+                font-size: 10px;
+                margin-left: 45%;
+                margin-top: -50px;
+
+            }
+
+            #title ul li {
+                float: left;
+                list-style: none;
+                color: black;
+                font-weight: 900;
+                margin-left: 10%;
+                margin-top: 18px;
+            }
+
+            .tu>img {
+                width: 1401px;
+                height: 180px;
+                padding: 2px;
+            }
+
+            .nav_box {
+                width: 100%;
+                height: 33px;
+                background: white;
+                border-bottom: 2px solid #f1f1f1;
+            }
+
+            .nav_box .nav {
+                width: 1200px;
+                height: 33px;
+                margin: auto;
+            }
+
+            .nav_box .nav ul {
+                display: flex;
+                list-style: none;
+                margin-left: 150px;
+            }
+
+            .nav_box .nav ul li {
+                width: 85px;
+                height: 33px;
+                font-size: 10px;
+                text-align: center;
+                line-height: 33px;
+            }
+
+            .nav_box .nav ul li:nth-child(2) {
+                color: #21b8c6;
+                /* height: 50px; */
+                border-bottom: 2px solid #21b8c6;
+            }
+
+            .center {
+                width: 1200px;
+                height: 2000px;
+                background:white;
+                margin: auto;
+            }
+
+            .center2 {
+                display: flex;
+                width: 1200px;
+                height: 150px;
+                background: white;
+                border-bottom: 2px solid #f1f1f1;
+            }
+
+            p {
+                font-size: 26px;
+                font-weight: 200px;
+                margin-left: 42%;
+                margin-top: 60px;
+            }
+
+            span {
+                font-size: 4px;
+                color: #B9B8B8;
+                margin-left: -17%;
+                margin-top: 110px;
+            }
+
+            /* .Leftnavigationbar{
+                width: 50px;
+                height: 270px;
+                background:red; 
+                margin-left: 70px;
+            } */
+            .Leftnavigationbar ul li {
+                list-style: none;
+            }
+
+            ul li img {
+                width: 35px;
+                height: 35px;
+                line-height: 3px;
+                margin-left: 167px;
+            }
+
+            .center3 {
+                width: 880px;
+                height: 80px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: -24.5%;
+            }
+
+            .center3 p {
+                font-size: 2%;
+                color: black;
+                margin-left: 5%;
+                margin-top: 2%;
+                line-height: 20px;
+            }
+
+            .center4 {
+                width: 880px;
+                height: 300px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 1%;
+            }
+
+            .tu1 img {
+                width: 270px;
+                height: 266px;
+                display: flex;
+                margin-left: 50%;
+                margin-top: 12%;
+            }
+
+            .tu2 img {
+                width: 270px;
+                height: 130px;
+                display: flex;
+                margin-left: 53%;
+                margin-top: 12%;
+            }
+
+            .tu3 img {
+                width: 270px;
+                height: 130px;
+                display: flex;
+                margin-left: -47%;
+                margin-top: 62%;
+            }
+
+            h5 {
+                text-align: center;
+                margin-top: 4%;
+            }
+
+            .center5 {
+                width: 880px;
+                height: 50px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 2%;
+            }
+
+            .center5 p {
+                font-size: 7px;
+                color: black;
+                margin-left: 5.5%;
+                margin-top: 1%;
+            }
+
+            .center6 {
+                width: 880px;
+                height: 510px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 2%;
+            }
+
+            .tu4 img {
+                width: 270px;
+                height: 178px;
+                margin-left: 137px;
+                margin-top: 2%;
+                display: flex;
+            }
+
+            .tu5 img {
+                width: 270px;
+                height: 178px;
+                display: flex;
+                margin-left: 2%;
+                margin-top: 2.5%;
+            }
+
+            .tu6 img {
+                width: 270px;
+                height: 270px;
+                display: flex;
+                margin-left: -200%;
+                margin-top: 73%;
+            }
+
+            .tu7 img {
+                width: 270px;
+                height: 132px;
+                display: flex;
+                margin-left: -198%;
+                margin-top: 73%;
+            }
+
+            .tu8 img {
+                width: 270px;
+                height: 132px;
+                display: flex;
+                margin-left: -298%;
+                margin-top: 124%;
+            }
+
+            h5 {
+                text-align: center;
+                margin-top: 1.5%;
+            }
+
+            .center7 {
+                width: 880px;
+                height: 50px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 2%;
+            }
+
+            .center7 p {
+                font-size: 7px;
+                color: black;
+                margin-left: 5.5%;
+                margin-top: 1%;
+            }
+
+            .center8 {
+                width: 880px;
+                height: 30px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 2%;
+                border-bottom: 1px solid #f1f1f1;
+                border-top: 1px solid #f1f1f1;
+            }
+
+            .center8 span {
+                font-size: 7px;
+                color: black;
+                margin-top: 1%;
+                margin-left: 3%;
+                display: flex;
+            }
+
+            .center9 {
+                width: 880px;
+                height: 113px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            .center9 button {
+                width: 70px;
+                height: 30px;
+                background: white;
+                text-align: center;
+                border: 1px solid #f1f1f1;
+                margin-left: 40%;
+                margin-top: 5%;
+            }
+
+            .center10 img {
+                width: 880px;
+                height: 273px;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 2%;
+            }
+
+            .box {
+                width: 880px;
+                height: 189px;
+                background: white;
+                display: flex;
+                margin-left: 17%;
+                margin-top: 1%;
+                border-bottom: 1px solid #f1f1f1;
+            }
+            .box ul li{
+                list-style: none;
+                font-size: 7px;
+                font-weight: 900px;
+                color: #21b8c6;
+                line-height: 20px;
+                margin-top: 1%;
+            }
+            .box ul li p{
+                font-size: 10px;
+                color: black;
+                line-height: 15px;
+                margin-left: 2%;
+                margin-top: 0.5%;
+            }
+            footer {
+                width: 100%;
+                height: 260px;
+                background: #eaeaea;
+                padding-top: 65px;
+            }
+
+            .foot_box {
+                margin: 0 auto;
+                width: 1200px;
+                height: 222px;
+            }
+
+            .foot_box_left {
+                width: 540px;
+                height: 222px;
+                float: left;
+            }
+
+            .foot_box_right {
+                width: 660px;
+                height: 222px;
+                float: left;
+            }
+
+            .foot_box_left h3 {
+                font-size: 15px;
+                font-weight: 100;
+                color: #9f9f9f;
+            }
+
+            .foot_box_left .phone_site {
+                margin-top: 30px;
+                margin-bottom: 40px;
+                width: 460px;
+                height: 45px;
+            }
+
+            .foot_box_left .phone_site p {
+                color: #a0a0a0;
+            }
+
+            .foot_box_left .logo div {
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+                background: #a0a0a0;
+                color: white;
+                text-align: center;
+                line-height: 31px;
+                float: left;
+                margin-right: 30px;
+            }
+
+            .foot_box_right ul {
+                float: left;
+                margin-right: 35px;
+            }
+
+            .foot_box_right ul li {
+                line-height: 25px;
+                list-style: none;
+                color: #a0a0a0;
+            }
+
+            .foot_box_right ul li:nth-child(1) {
+                font-weight: bolder;
+            }
+
+            .foot_box_right ul li:nth-child(2) {
+                line-height: 22px;
+            }
+
+            .foot {
+                margin: auto;
+                border-top: 1px solid #a0a0a0;
+                width: 1200px;
+                height: 45px;
+                color: #a0a0a0;
+                line-height: 45px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 整体的盒子 -->
+        <div class="wholebox">
+            <div class="header1">
+                <div class="img"><img src="./images/合作伙伴---门诊列表---详细页_03.png" alt=""></div>
+                <div id="title">
+                    <ul>
+                        <li>首页</li>
+                        <li>走进郎朗</li>
+                        <li>资讯动态</li>
+                        <li>合作伙伴</li>
+                        <li>辅助功能</li>
+                        <li>联系我们</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="tu"><img src="./images/合作伙伴---门诊列表---详细页_06.png" alt=""></div>
+            </div>
+            <div class="nav_box">
+                <div class="nav">
+                    <ul>
+                        <li>合作伙伴</li>
+                        <li>门诊列表</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <div class="center2">
+                    <p>富来慕口腔种植中心</p>
+                    <span><b>来源：朗朗口腔 日期：2017年9月16日</b></span>
+                </div>
+
+                <div class="Leftnavigationbar">
+                    <ul>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_09.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_13.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_17.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_27.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_29.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_32.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_34.png" alt=""></li>
+                        <li><img src="./images/合作伙伴---门诊列表---详细页_39.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="center3">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;富来慕口腔位于大连市西岗区鞍山路与不老街交汇处，出去大连市中心地段，总面积约为500平方米，是大连投资最大的高档口腔诊所之一；门诊实行严格
+                        的消毒隔离制度和先进的“四手”操作服务。提供口轻档案分析，全面的的口腔健康规划、专业的导诊服务、就诊的时间提醒；在关注患者的同时更多的关注
+                        患者的就诊感受；
+                    </p>
+                </div>
+                <div class="center4">
+                    <div class="tu1"><img src="./images/合作伙伴---门诊列表---详细页_25.png" alt=""></div>
+                    <div class="tu2"><img src="./images/合作伙伴---门诊列表---详细页_22.png" alt=""></div>
+                    <div class="tu3"><img src="./images/合作伙伴---门诊列表---详细页_37.png" alt=""></div>
+                </div>
+                <h5>先进数字化诊疗设备，让治疗变成一种享受</h5>
+                <div class="center5">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;富来慕口腔设有9间治疗诊所，配备国际先进的诊疗设备，为患者提供高品质的服务，也为医生的诊疗提供科学、快捷、准确的依据，让患者在接受牙齿
+                        治疗的同时变成一种享受
+                    </p>
+                </div>
+                <div class="center6">
+                    <div class="tu4"><img src="./images/合作伙伴---门诊列表---详细页_40.png" alt=""></div>
+                    <div class="tu5"><img src="./images/合作伙伴---门诊列表---详细页_42.png" alt=""></div>
+                    <div class="tu6"><img src="./images/合作伙伴---门诊列表---详细页_44.png" alt=""></div>
+                    <div class="tu7"><img src="./images/合作伙伴---门诊列表---详细页_46.png" alt=""></div>
+                    <div class="tu8"><img src="./images/合作伙伴---门诊列表---详细页_49.png" alt=""></div>
+                </div>
+                <h5>顶级专家团队为患者保驾护航</h5>
+                <div class="center7">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;富来慕口腔设有9间治疗诊所，配备国际先进的诊疗设备，为患者提供高品质的服务，也为医生的诊疗提供科学、快捷、准确的依据，让患者在接受牙齿
+                        治疗的同时变成一种享受
+                    </p>
+                </div>
+                <div class="center8">
+                    <span>《资本垂涎“口腔经济”郎朗口腔合伙人模式并购风暴&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>不忘初心，砥砺奋进》</span>
+                </div>
+                <div class="center9">
+                    <button>返回列表</button>
+                </div>
+                <div class="center10"><img src="./images/合作伙伴---门诊列表---详细页_53.png" alt=""></div>
+                <div class="box">
+                    <ul>
+                        <li>1、公交站：鞍山路站
+                            <p>
+                                途径公交：1路车、大连火车站-开发区、303路、34路、411路、414路、512路、70路、7路、大连火车站-夏家河子、祥和花园-胜利桥北
+                            </p>
+                        </li>
+                        <li>
+                            2、公交站：大同街站
+                            <p>
+                                    途径公交：20路车、、303路、34路、411路、414路、512路、70路、7路
+                            </p>
+                        </li>
+                        <li>
+                            3、公交站：五一广场
+                            <p>
+                                    途径公交：11路车、大连火车站-开发区、303路、34路、411路、414路、512路、70路、7路、大连火车站-夏家河子、祥和花园-胜利桥北、
+                                    303路、34路、411路、414路、512路、70路、7路
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="foot_box">
+                    <div class="foot_box_left">
+                        <h3>郎朗医疗投资投资有限公司</h3>
+                        <!-- <div class="phone_site">
+                            <p>集团总部热线：4000-890-608</p>
+                            <p>集团总部地址：集团总部地址:广东省深圳市南山区高新南-道3号富诚大厦楼</p>
+                        </div> -->
+
+                        <div class="logo">
+                            <div><img src="./images/合作伙伴---门诊列表---详细页_61.png" alt=""></div>
+                            <div><img src="./images/合作伙伴---门诊列表---详细页_63.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="foot_box_right">
+                        <ul>
+                            <li>走进朗朗</li>
+                            <li>—————</li>
+                            <li>朗朗简介</li>
+                            <li>朗朗优势</li>
+                            <li>企业荣誉</li>
+                            <li>团队风采</li>
+                        </ul>
+
+                        <ul>
+                            <li>走进朗朗</li>
+                            <li>—————</li>
+                            <li>朗朗简介</li>
+                            <li>朗朗优势</li>
+                            <li>企业荣誉</li>
+                            <li>团队风采</li>
+                        </ul>
+
+                        <ul>
+                            <li>走进朗朗</li>
+                            <li>—————</li>
+                            <li>朗朗简介</li>
+                            <li>朗朗优势</li>
+                            <li>企业荣誉</li>
+                            <li>团队风采</li>
+                        </ul>
+
+                        <ul>
+                            <li>走进朗朗</li>
+                            <li>—————</li>
+                            <li>朗朗简介</li>
+                            <li>朗朗优势</li>
+                            <li>企业荣誉</li>
+                            <li>团队风采</li>
+                        </ul>
+
+                        <ul>
+                            <li>走进朗朗</li>
+                            <li>—————</li>
+                            <li>朗朗简介</li>
+                            <li>朗朗优势</li>
+                            <li>企业荣誉</li>
+                            <li>团队风采</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot">
+                    ◎2005 - 2016朗朗口腔医疗投资有限公司版权所有粤I(CP备08130115号-1
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</div>
